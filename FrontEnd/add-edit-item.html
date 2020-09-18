@@ -80,7 +80,7 @@ The above copyright notice and this permission notice shall be included in all c
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
               <div class="form-group">
-                <label for="exampleFormControlSelect1">Example select</label>
+                <label for="exampleFormControlSelect1">Food category</label>
                 <select class="form-control selectpicker" data-style="btn btn-link" id="exampleFormControlSelect1">
                   <option>Fresh fruit and veg</option>
                   <option>Tinned</option>
@@ -117,16 +117,30 @@ The above copyright notice and this permission notice shall be included in all c
           <div class="col-md-6  mr-auto border-style: 2px solid black">
             <!-- Time slot, save and delete here -->
             <div class="row">
-              <div class="form-group">
-                <label class="label-control">Available collection time, from: </label>
-                <input type="text" class="form-control datetimepicker" value="10/11/2020"/>
-                <label class="label-control"> to: </label>
-                <input type="text" class="form-control datetimepicker" value="11/11/2020"/>
-                
+              <label class="col-md-12 label-control">Available collection time</label>
+              <div class="col-6 col-md-6">
+                <div class="form-group">
+                  <label class="label-control"> from: </label>
+                  <input type="text" class="form-control datetimepicker" value="10/11/2020"/>
+                </div>
               </div>
+              <div class="col-6 col-md-6">
+                <div class="form-group">
+                  <label class="label-control"> to: </label>
+                  <input type="text" class="form-control datetimepicker" value="11/11/2020"/>
+                </div>  
+              </div> 
             </div>
-            <div class="row">
+            
+            <div class="row float-right">
+              <div class=" col-6 col-md-6 ">
+                <button type="button" class="btn btn-danger">Cancel</button>
+              </div>  
+              <div class=" col-6 col-md-6 ">
+                <button type="button" class="btn btn-success">Save</button>
+              </div>
             </div>  
+
           </div>
         </div>
       </div>
