@@ -1,16 +1,3 @@
-<!--
-=========================================================
-Material Kit - v2.0.7
-=========================================================
-
-Product Page: https://www.creative-tim.com/product/material-kit
-Copyright 2020 Creative Tim (https://www.creative-tim.com/)
-
-Coded by Creative Tim
-
-=========================================================
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,7 +9,7 @@ The above copyright notice and this permission notice shall be included in all c
     />
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>My Items Listings</title>
+    <title>Material Kit by Creative Tim</title>
     <meta
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
       name="viewport"
@@ -43,17 +30,15 @@ The above copyright notice and this permission notice shall be included in all c
     <link href="../assets/demo/demo.css" rel="stylesheet" />
   </head>
 
-  <body class="landing-page sidebar-collapse">
+  <body class="profile-page sidebar-collapse">
     <nav
-      class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg"
+      class="navbar fixed-top navbar-expand-lg bg-rose"
       color-on-scroll="100"
       id="sectionsNav"
     >
       <div class="container">
         <div class="navbar-translate">
-          <a class="navbar-brand" href="#">
-            <i class="material-icons">restaurant</i>
-          </a>
+          <a class="material-icons">restaurant</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -75,427 +60,316 @@ The above copyright notice and this permission notice shall be included in all c
                 class="dropdown-toggle nav-link"
                 data-toggle="dropdown"
               >
-                <i class="material-icons">apps</i> Menu
+                <i class="material-icons">face</i> Account
               </a>
               <div class="dropdown-menu dropdown-with-icons">
-                <a href="#" class="dropdown-item">
+                <a href="./index.html" class="dropdown-item">
+                  <i class="material-icons">account_box</i> My Account
+                </a>
+                <a href="./index.html" class="dropdown-item">
                   <i class="material-icons">dashboard</i> Dashboard
                 </a>
-                <a href="#" class="dropdown-item">
-                  <i class="material-icons">content_paste</i> My Listings
+                <a href="./index.html" class="dropdown-item">
+                  <i class="material-icons">list</i> My Items
                 </a>
-                <a href="#" class="dropdown-item">
-                  <i class="material-icons">add_box</i> Add Item
+                <a href="./index.html" class="dropdown-item">
+                  <i class="material-icons">playlist_add</i> Add Items
                 </a>
-                <a href="#" class="dropdown-item">
-                  <i class="material-icons">food_bank</i> My Collections
-                </a>
-                <!--a
-                href="#"
-                class="dropdown-item"
-              >
-                <i class="material-icons">face</i> My Profile
-              </a-->
-                <a href="#" class="dropdown-item">
-                  <i class="material-icons">exit_to_app</i> Logout
+                <a href="./index.html" class="dropdown-item">
+                  <i class="material-icons">login</i> Logout
                 </a>
               </div>
-            </li>
-            <li class="nav-item"></li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                rel="tooltip"
-                title=""
-                data-placement="bottom"
-                href="#"
-                target="_blank"
-                data-original-title="My profile"
-                rel="nofollow"
-              >
-                <i class="material-icons">face</i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                rel="tooltip"
-                title=""
-                data-placement="bottom"
-                href="https://twitter.com/CreativeTim"
-                target="_blank"
-                data-original-title="Follow us on Twitter"
-                rel="nofollow"
-              >
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                rel="tooltip"
-                title=""
-                data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim"
-                target="_blank"
-                data-original-title="Like us on Facebook"
-                rel="nofollow"
-              >
-                <i class="fa fa-facebook-square"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                rel="tooltip"
-                title=""
-                data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial"
-                target="_blank"
-                data-original-title="Follow us on Instagram"
-                rel="nofollow"
-              >
-                <i class="fa fa-instagram"></i>
-              </a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <!--div
-      class="page-header header-filter"
-      style="background-image: url('../assets/img/board.jpg')"
-    >
-      <--div class="container">
-        <div class="row">
-          
-        </div>
-      </div-!>
-    </div-->
     <div
-      class="page-header header-filter"
-      data-parallax="false"
-      style="
-        background-image: url('../assets/img/board.jpg');
-        background-size: cover;
-        background-position: top center;
-        height: 100px;
-      "
+      class="page-header"
+      data-parallax="true"
+      style="background-image: url('../assets/img/city-profile.jpg')"
     ></div>
-    <div class="main">
+    <div class="main main-raised">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 col-md-12 ml-auto mr-auto">
-            <div class="card card-nav-tabs" style="margin-top: 40px">
-              <h4 class="card-header card-header-text card-header-rose">
-                My Listings
-              </h4>
-              <div class="card-body" style="padding: 1%">
-                <!--h4 class="card-title">Special title treatment</h4-->
-                <!--p class="card-text">With supporting text below as a natural lead-in to additional content.</p-->
-                <!--a href="javascript:;" class="btn btn-primary">Go somewhere</a-->
-                <div
-                  class="container"
-                  style="padding-left: 5%; padding-right: 5%"
-                >
+          <div class="col-12 col-md-12 ml-auto mr-auto">&nbsp;</div>
+        </div>
+        <div class="description text-center">
+          <h3 class="title">My Listings</h3>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <div class="row">
+              <div class="col-12">
+                <div class="dropdown float-right">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    id="dropdownMenuButton"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Sort By
+                  </button>
+                  <div
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton"
+                  >
+                    <a class="dropdown-item" href="#">Category</a>
+                    <a class="dropdown-item" href="#">Expiry Date</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-3 mr-auto ml-auto"
+                style="padding: 1%; max-width: 100%"
+              >
+                <a href="#">
+                  <img
+                    class="img-raised img-fluid"
+                    src="../assets/img/purple-banana.jpg"
+                    rel="nofollow"
+                    alt="Thumbnail Image"
+                  />
+                </a>
+              </div>
+              <div class="col-6" style="padding: 1%; max-width: 100%">
+                <div class="container" style="padding: 1%; max-width: 100%">
                   <div class="row">
-                    <div class="col-12">
-                      <div class="dropdown" style="float: right">
-                        <button
-                          class="btn btn-secondary dropdown-toggle"
-                          type="button"
-                          id="dropdownMenuButton"
-                          data-toggle="dropdown"
-                          aria-haspopup="true"
-                          aria-expanded="false"
-                        >
-                          Sort By
-                        </button>
-                        <div
-                          class="dropdown-menu"
-                          aria-labelledby="dropdownMenuButton"
-                        >
-                          <a class="dropdown-item" href="#">Category</a>
-                          <a class="dropdown-item" href="#">Expiry Date</a>
-                        </div>
-                      </div>
+                    <div
+                      class="col-12 text-left"
+                      style="max-width: 100%; font-size: 11pt"
+                    >
+                      <a href="#">Lorem ipsum dolor, sit amet consectetur.</a>
                     </div>
                   </div>
                   <div class="row">
-                    <div
-                      class="col-3 mr-auto ml-auto"
-                      style="padding: 1%; max-width: 100%"
-                    >
-                      <a href="#">
-                        <img
-                          class="card-img-top"
-                          src="../assets/img/purple-banana.jpg"
-                          rel="nofollow"
-                          alt="Card image cap"
-                        />
-                      </a>
-                    </div>
-                    <div class="col-6" style="padding: 1%; max-width: 100%">
-                      <div
-                        class="container"
-                        style="padding: 1%; max-width: 100%"
-                      >
-                        <div class="row">
-                          <div
-                            class="col-12 text-left"
-                            style="max-width: 100%; font-size: 11pt"
-                          >
-                            <a href="#"
-                              >Lorem ipsum dolor, sit amet consectetur.</a
-                            >
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12 text-left" style="font-size: 9pt">
-                            Collect: 12th Mar 9am to 12pm
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-6 text-left" style="font-size: 9pt">
-                            Fruit
-                          </div>
-
-                          <div class="col-6 text-left" style="font-size: 9pt">
-                            EN4 6RP
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12 text-left" style="font-size: 9pt">
-                            Expires: 12/03/2020
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-3 mr-auto ml-auto">
-                      <div class="container" style="max-width: 100%">
-                        <div class="row">
-                          <div class="col-12" style="max-width: 100%">
-                            <td class="td-actions text-right">
-                              <button
-                                type="button"
-                                rel="tooltip"
-                                class="btn btn-info btn-sm"
-                                style="margin: 3px"
-                              >
-                                <i class="material-icons">person</i>
-                              </button>
-                            </td>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12" style="max-width: 100%">
-                            <td class="td-actions text-right">
-                              <button
-                                type="button"
-                                rel="tooltip"
-                                class="btn btn-success btn-sm"
-                                style="margin: 3px"
-                              >
-                                <i class="material-icons">edit</i>
-                              </button>
-                              <button
-                                type="button"
-                                rel="tooltip"
-                                class="btn btn-danger btn-sm"
-                                style="margin: 3px"
-                              >
-                                <i class="material-icons">delete</i>
-                              </button>
-                            </td>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="col-12 text-left" style="font-size: 9pt">
+                      Collect: 12th Mar 9am to 12pm
                     </div>
                   </div>
                   <div class="row">
-                    <div
-                      class="col-3 mr-auto ml-auto"
-                      style="padding: 1%; max-width: 100%"
-                    >
-                      <a href="#">
-                        <img
-                          class="card-img-top"
-                          src="../assets/img/purple-banana.jpg"
-                          rel="nofollow"
-                          alt="Card image cap"
-                        />
-                      </a>
+                    <div class="col-6 text-left" style="font-size: 9pt">
+                      Fruit
                     </div>
-                    <div class="col-6" style="padding: 1%; max-width: 100%">
-                      <div
-                        class="container"
-                        style="padding: 1%; max-width: 100%"
-                      >
-                        <div class="row">
-                          <div
-                            class="col-12 text-left"
-                            style="max-width: 100%; font-size: 11pt"
-                          >
-                            <a href="#"
-                              >Lorem ipsum dolor, sit amet consectetur.</a
-                            >
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12 text-left" style="font-size: 9pt">
-                            Collect: 12th Mar 9am to 12pm
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-6 text-left" style="font-size: 9pt">
-                            Fruit
-                          </div>
 
-                          <div class="col-6 text-left" style="font-size: 9pt">
-                            EN4 6RP
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12 text-left" style="font-size: 9pt">
-                            Expires: 12/03/2020
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-3 mr-auto ml-auto">
-                      <div class="container" style="max-width: 100%">
-                        <div class="row">
-                          <div class="col-12" style="max-width: 100%">
-                            <td class="td-actions text-right">
-                              <button
-                                type="button"
-                                rel="tooltip"
-                                class="btn btn-info btn-sm"
-                                style="margin: 3px"
-                              >
-                                <i class="material-icons">person</i>
-                              </button>
-                            </td>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12" style="max-width: 100%">
-                            <td class="td-actions text-right">
-                              <button
-                                type="button"
-                                rel="tooltip"
-                                class="btn btn-success btn-sm"
-                                style="margin: 3px"
-                              >
-                                <i class="material-icons">edit</i>
-                              </button>
-                              <button
-                                type="button"
-                                rel="tooltip"
-                                class="btn btn-danger btn-sm"
-                                style="margin: 3px"
-                              >
-                                <i class="material-icons">delete</i>
-                              </button>
-                            </td>
-                          </div>
-                        </div>
-                      </div>
+                    <div class="col-6 text-left" style="font-size: 9pt">
+                      EN4 6RP
                     </div>
                   </div>
                   <div class="row">
-                    <div
-                      class="col-3 mr-auto ml-auto"
-                      style="padding: 1%; max-width: 100%"
-                    >
-                      <a href="#">
-                        <img
-                          class="card-img-top"
-                          src="../assets/img/purple-banana.jpg"
-                          rel="nofollow"
-                          alt="Card image cap"
-                        />
-                      </a>
+                    <div class="col-12 text-left" style="font-size: 9pt">
+                      Expires: 12/03/2020
                     </div>
-                    <div
-                      class="col-6 mr-auto ml-auto"
-                      style="padding: 1%; max-width: 100%"
-                    >
-                      <div
-                        class="container"
-                        style="padding: 1%; max-width: 100%"
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="row">
+                  <div class="col-12">
+                    <td class="td-actions">
+                      <button
+                        type="button"
+                        rel="tooltip"
+                        class="btn btn-info btn-sm float-right"
+                        style="margin: 3px"
                       >
-                        <div class="row">
-                          <div
-                            class="col-12 text-left"
-                            style="max-width: 100%; font-size: 11pt"
-                          >
-                            <a href="#"
-                              >Lorem ipsum dolor, sit amet consectetur.</a
-                            >
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12 text-left" style="font-size: 9pt">
-                            Collect: 12th Mar 9am to 12pm
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-6 text-left" style="font-size: 9pt">
-                            Fruit
-                          </div>
+                        <i class="material-icons">emoji_events</i>
+                      </button>
+                    </td>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <td class="td-actions">
+                      <button
+                        type="button"
+                        rel="tooltip"
+                        class="btn btn-success btn-sm float-right"
+                        style="margin: 3px"
+                      >
+                        <i class="material-icons">edit</i>
+                      </button>
+                      <button
+                        type="button"
+                        rel="tooltip"
+                        class="btn btn-danger btn-sm float-right"
+                        style="margin: 3px"
+                      >
+                        <i class="material-icons">delete</i>
+                      </button>
+                    </td>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-3 mr-auto ml-auto"
+                style="padding: 1%; max-width: 100%"
+              >
+                <a href="#">
+                  <img
+                    class="img-raised img-fluid"
+                    src="../assets/img/purple-banana.jpg"
+                    rel="nofollow"
+                    alt="Thumbnail Image"
+                  />
+                </a>
+              </div>
+              <div class="col-6" style="padding: 1%; max-width: 100%">
+                <div class="container" style="padding: 1%; max-width: 100%">
+                  <div class="row">
+                    <div
+                      class="col-12 text-left"
+                      style="max-width: 100%; font-size: 11pt"
+                    >
+                      <a href="#">Lorem ipsum dolor, sit amet consectetur.</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 text-left" style="font-size: 9pt">
+                      Collect: 12th Mar 9am to 12pm
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 text-left" style="font-size: 9pt">
+                      Fruit
+                    </div>
 
-                          <div class="col-6 text-left" style="font-size: 9pt">
-                            EN4 6RP
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12 text-left" style="font-size: 9pt">
-                            Expires: 12/03/2020
-                          </div>
-                        </div>
-                      </div>
+                    <div class="col-6 text-left" style="font-size: 9pt">
+                      EN4 6RP
                     </div>
-                    <div class="col-3 mr-auto ml-auto">
-                      <div class="container" style="max-width: 100%">
-                        <div class="row">
-                          <div class="col-12" style="max-width: 100%">
-                            <td class="td-actions text-right">
-                              <button
-                                type="button"
-                                rel="tooltip"
-                                class="btn btn-info btn-sm"
-                                style="margin: 3px"
-                              >
-                                <i class="material-icons">person</i>
-                              </button>
-                            </td>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-12" style="max-width: 100%">
-                            <td class="td-actions text-right">
-                              <button
-                                type="button"
-                                rel="tooltip"
-                                class="btn btn-success btn-sm"
-                                style="margin: 3px"
-                              >
-                                <i class="material-icons">edit</i>
-                              </button>
-                              <button
-                                type="button"
-                                rel="tooltip"
-                                class="btn btn-danger btn-sm"
-                                style="margin: 3px"
-                              >
-                                <i class="material-icons">delete</i>
-                              </button>
-                            </td>
-                          </div>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 text-left" style="font-size: 9pt">
+                      Expires: 12/03/2020
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="row">
+                  <div class="col-12">
+                    <td class="td-actions">
+                      <button
+                        type="button"
+                        rel="tooltip"
+                        class="btn btn-info btn-sm float-right"
+                        style="margin: 3px"
+                      >
+                        <i class="material-icons">emoji_events</i>
+                      </button>
+                    </td>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <td class="td-actions">
+                      <button
+                        type="button"
+                        rel="tooltip"
+                        class="btn btn-success btn-sm float-right"
+                        style="margin: 3px"
+                      >
+                        <i class="material-icons">edit</i>
+                      </button>
+                      <button
+                        type="button"
+                        rel="tooltip"
+                        class="btn btn-danger btn-sm float-right"
+                        style="margin: 3px"
+                      >
+                        <i class="material-icons">delete</i>
+                      </button>
+                    </td>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-3 mr-auto ml-auto"
+                style="padding: 1%; max-width: 100%"
+              >
+                <a href="#">
+                  <img
+                    class="img-raised img-fluid"
+                    src="../assets/img/purple-banana.jpg"
+                    rel="nofollow"
+                    alt="Thumbnail Image"
+                  />
+                </a>
+              </div>
+              <div class="col-6" style="padding: 1%; max-width: 100%">
+                <div class="container" style="padding: 1%; max-width: 100%">
+                  <div class="row">
+                    <div
+                      class="col-12 text-left"
+                      style="max-width: 100%; font-size: 11pt"
+                    >
+                      <a href="#">Lorem ipsum dolor, sit amet consectetur.</a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 text-left" style="font-size: 9pt">
+                      Collect: 12th Mar 9am to 12pm
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 text-left" style="font-size: 9pt">
+                      Fruit
+                    </div>
+
+                    <div class="col-6 text-left" style="font-size: 9pt">
+                      EN4 6RP
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 text-left" style="font-size: 9pt">
+                      Expires: 12/03/2020
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="row">
+                  <div class="col-12">
+                    <td class="td-actions">
+                      <button
+                        type="button"
+                        rel="tooltip"
+                        class="btn btn-info btn-sm float-right"
+                        style="margin: 3px"
+                      >
+                        <i class="material-icons">emoji_events</i>
+                      </button>
+                    </td>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <td class="td-actions">
+                      <button
+                        type="button"
+                        rel="tooltip"
+                        class="btn btn-success btn-sm float-right"
+                        style="margin: 3px"
+                      >
+                        <i class="material-icons">edit</i>
+                      </button>
+                      <button
+                        type="button"
+                        rel="tooltip"
+                        class="btn btn-danger btn-sm float-right"
+                        style="margin: 3px"
+                      >
+                        <i class="material-icons">delete</i>
+                      </button>
+                    </td>
                   </div>
                 </div>
               </div>
@@ -503,15 +377,58 @@ The above copyright notice and this permission notice shall be included in all c
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-12 col-md-12 ml-auto mr-auto">
-            <div class="text-center">
-              <a href="#pablo" class="btn btn-rose">Add Item</a>
-            </div>
+          <div class="col-4 col-md-4 ml-auto mr-auto">
+            <a href="#pablo" class="btn btn-rose">Add Item</a>
+          </div>
+          <!--div class="col-md-6 ml-auto mr-auto">
+            <button class="btn btn-rose">Add Item</button>
+          </div-->
+          <div class="col-8 col-md-8 ml-auto mr-auto">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination float-right">
+                <li class="page-item">
+                  <a class="page-link" href="javascript:;">Previous</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="javascript:;">1</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="javascript:;">2</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="javascript:;">3</a>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="javascript:;">Next</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
     </div>
-    <!--footer class="footer footer-default text-center"></footer-->
+    <footer class="footer footer-default">
+      <div class="container">
+        <nav class="float-left">
+          <ul>
+            <li>
+              <a href="https://www.creative-tim.com/presentation"> About Us </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright float-right">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          , made with <i class="material-icons">favorite</i> by
+          <a href="https://www.creative-tim.com/" target="_blank"
+            >Souper Heroes</a
+          >
+          reducing food waste.
+        </div>
+      </div>
+    </footer>
     <!--   Core JS Files   -->
     <script
       src="../assets/js/core/jquery.min.js"
