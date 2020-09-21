@@ -1,27 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hello, world!</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0, name="viewport" />
+    <meta charset="utf-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../assets/img/apple-icon.png"
+    />
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <!--  Fonts and icons  -->
-      <!-- Fonts and icons -->
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-<link href="../assets/demo/demo.css" rel="stylesheet" />
-
-    <!-- Material Kit CSS -->
+    <title>Material Kit by Creative Tim</title>
+    <meta
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+      name="viewport"
+    />
+    <!--     Fonts and icons     -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+    />
+    <!-- CSS Files -->
     <link href="../assets/css/material-kit.css?v=2.0.7" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="../assets/demo/demo.css" rel="stylesheet" />
   </head>
-  <body>
-    <nav class="navbar fixed-top navbar-expand-lg bg-rose" color-on-scroll="100" id="sectionsNav">
+
+  <body class="profile-page sidebar-collapse">
+    <nav
+      class="navbar fixed-top navbar-expand-lg bg-rose"
+      color-on-scroll="100"
+      id="sectionsNav"
+    >
       <div class="container">
         <div class="navbar-translate">
-          <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-            Home </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="material-icons">restaurant</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="sr-only">Toggle navigation</span>
             <span class="navbar-toggler-icon"></span>
             <span class="navbar-toggler-icon"></span>
@@ -31,15 +55,28 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="dropdown nav-item">
-              <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
-                <i class="material-icons">account_circle</i> Account
+              <a
+                href="#"
+                class="dropdown-toggle nav-link"
+                data-toggle="dropdown"
+              >
+                <i class="material-icons">face</i> Account
               </a>
               <div class="dropdown-menu dropdown-with-icons">
                 <a href="./index.html" class="dropdown-item">
-                  <i class="material-icons">layers</i> All Components
+                  <i class="material-icons">account_box</i> My Account
                 </a>
-                <a href="https://demos.creative-tim.com/material-kit/docs/2.0/getting-started/introduction.html" class="dropdown-item">
-                  <i class="material-icons">content_paste</i> Documentation
+                <a href="./index.html" class="dropdown-item">
+                  <i class="material-icons">dashboard</i> Dashboard
+                </a>
+                <a href="./index.html" class="dropdown-item">
+                  <i class="material-icons">list</i> My Items
+                </a>
+                <a href="./index.html" class="dropdown-item">
+                  <i class="material-icons">playlist_add</i> Add Items
+                </a>
+                <a href="./index.html" class="dropdown-item">
+                  <i class="material-icons">login</i> Logout
                 </a>
               </div>
             </li>
@@ -47,119 +84,352 @@
         </div>
       </div>
     </nav>
-
-<div class="main ">
-  <div class="container">
-    <div class="section text-center">
-      <h2 class="title">Your main section here</h2>
-    </div>
-  </div>
-
-  <div class="row">
-    
-    <div class="col-xs-12 col-md-3">
-        <ul class="nav nav-pills nav-pills-rose flex-column">
-          <li class="nav-item"><a class="nav-link active" href="#tab1" data-toggle="tab">Profile</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tab2" data-toggle="tab">Settings</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tab3" data-toggle="tab">Options</a></li>
-        </ul>
-    </div>
-    <div class="col-xs-12 col-md-9">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" rel="nofollow" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <div
+      class="page-header"
+      data-parallax="true"
+      style="background-image: url('../assets/img/city-profile.jpg')"
+    ></div>
+    <div class="main main-raised">
+      <div class="profile-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-3">
+              <div class="info">
+                <h4 class="info-title">Filters</h4>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Distance</label>
+                  <select
+                    class="form-control selectpicker"
+                    data-style="btn btn-link"
+                    id="exampleFormControlSelect1"
+                  >
+                    <option>in Miles</option>
+                    <option>in km</option>
+                  </select>
+                </div>
+                <div
+                  class="form-group"
+                  style="padding-top: 25px; padding-bottom: 25px"
+                >
+                  <div id="sliderRegular" class="slider"></div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Category</label>
+                  <select
+                    class="form-control selectpicker"
+                    data-style="btn btn-link"
+                    id="exampleFormControlSelect1"
+                  >
+                    <option>Fruit</option>
+                    <option>Vegetables</option>
+                    <option>Dairy Products</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="label-control">Expiry Date</label>
+                  <input
+                    type="text"
+                    class="form-control datetimepicker"
+                    value="10/05/2016"
+                  />
+                </div>
+                <button class="btn btn-rose col-12">Apply Filters</button>
+              </div>
             </div>
-          </div>
-        </div>
-      
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" rel="nofollow" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-          </div>
-        </div>
+            <div class="col-xs-12 col-md-9">
+              <div class="row">
+                <div class="col-md-4 offset-md-8">
+                  <div class="form-group">
+                    <select
+                      class="form-control selectpicker"
+                      data-style="btn btn-link"
+                      id="sortBy"
+                    >
+                      <option>Sort By: Distance</option>
+                      <option>Sort By: Expiry date</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
 
-        <div class="col-md-4">
-          <div class="card">
-            <img class="card-img-top" src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80" rel="nofollow" alt="Card image cap">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                      rel="nofollow"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                      rel="nofollow"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                      rel="nofollow"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                      rel="nofollow"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                      rel="nofollow"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                      rel="nofollow"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                      rel="nofollow"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                      rel="nofollow"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                  <div class="card">
+                    <img
+                      class="card-img-top"
+                      src="https://images.unsplash.com/photo-1517303650219-83c8b1788c4c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd4c162d27ea317ff8c67255e955e3c8&auto=format&fit=crop&w=2691&q=80"
+                      rel="nofollow"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <p class="card-text">
+                        Some quick example text to build on the card title and
+                        make up the bulk of the card's content.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="javascript:;" tabindex="-1"
+                      >Previous</a
+                    >
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:;">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:;">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:;">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link" href="javascript:;">Next</a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-md-3">
-            <div class="card">
-                <div class="card-header card-header-icon card-header-rose">
-                  <div class="card-icon">
-                    <i class="material-icons">language</i>
-                  </div>
-                </div>
-                <div class="card-body">
-                    <h4 class="card-title">Here is the Icon</h4>
-                        The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona...
-                </div>
-            </div>
-        </div>
-      
-        <div class="col-md-3">
-            <div class="card">
-                <div class="card-header card-header-text card-header-primary">
-                  <div class="card-text">
-                    <h4 class="card-title">Here is the Text</h4>
-                  </div>
-                </div>
-                <div class="card-body">
-                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona...
-                </div>
-            </div>
+    </div>
+    <footer class="footer footer-default">
+      <div class="container">
+        <nav class="float-left">
+          <ul>
+            <li>
+              <a href="https://www.souperheroes.com/presentation"> About Us </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="copyright float-right">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          , made with <i class="material-icons">favorite</i> by
+          <a href="https://www.creative-tim.com/" target="_blank"
+            >Souper Heroes</a
+          >
+          reducing food waste.
         </div>
       </div>
-</div>  
-  </div>
+    </footer>
+    <!--   Core JS Files   -->
+    <script
+      src="../assets/js/core/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../assets/js/core/popper.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="../assets/js/core/bootstrap-material-design.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="../assets/js/plugins/moment.min.js"></script>
+    <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+    <script
+      src="../assets/js/plugins/bootstrap-datetimepicker.js"
+      type="text/javascript"
+    ></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script
+      src="../assets/js/plugins/nouislider.min.js"
+      type="text/javascript"
+    ></script>
+    <!--  Google Maps Plugin    -->
+    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+    <script
+      src="../assets/js/material-kit.js?v=2.0.7"
+      type="text/javascript"
+    ></script>
 
+    <script>
+      $('.datetimepicker').datetimepicker({
+        icons: {
+          time: 'fa fa-clock-o',
+          date: 'fa fa-calendar',
+          up: 'fa fa-chevron-up',
+          down: 'fa fa-chevron-down',
+          previous: 'fa fa-chevron-left',
+          next: 'fa fa-chevron-right',
+          today: 'fa fa-screenshot',
+          clear: 'fa fa-trash',
+          close: 'fa fa-remove',
+        },
+      });
 
-<footer class="footer footer-default" >
-  <div class="container">
-    <nav class="float-left">
-      <ul>
-        <li>
-          <a href="https://www.creative-tim.com/">
-              Creative Tim
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div class="copyright float-right">
-        &copy;
-        <script>
-            document.write(new Date().getFullYear())
-        </script>, made with <i class="material-icons">favorite</i> by
-        <a href="https://www.creative-tim.com/" target="blank">Creative Tim</a> for a better web.
-    </div>
-  </div>
-</footer>
-<!--   Core JS Files   -->
-<script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
-<script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
-<script src="../assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-<script src="../assets/js/plugins/moment.min.js"></script>
-<!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-<script src="../assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
-<!--  Google Maps Plugin  -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-<script src="../assets/js/material-kit.js?v=2.0.7" type="text/javascript"></script></body>
+      $('.bootstrap-switch').each(function () {
+        $this = $(this);
+        data_on_label = $this.data('on-label') || 'aa';
+        data_off_label = $this.data('off-label') || 'bb';
+
+        $this.bootstrapSwitch({
+          onText: data_on_label,
+          offText: data_off_label,
+        });
+      });
+
+      var slider = document.getElementById('sliderRegular');
+
+      noUiSlider.create(slider, {
+        start: 2,
+        keyboardSupport: true,
+        connect: [true, false],
+        range: {
+          min: 0,
+          max: 5,
+        },
+        tooltips: true,
+        pips: {
+          mode: 'steps',
+          stepped: true,
+          density: 10,
+        },
+      });
+    </script>
+  </body>
 </html>
-
