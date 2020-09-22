@@ -104,24 +104,16 @@
           <div class="col-12 col-md-12">
             <div class="row">
               <div class="col-12">
-                <div class="dropdown float-right">
-                  <button
-                    class="btn btn-secondary dropdown-toggle"
-                    type="button"
-                    id="dropdownMenuButton"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
+                <div class="form-group float-right">
+                  <select
+                    class="form-control selectpicker"
+                    data-style="btn btn-link"
+                    id="sortBy"
+                    style="padding-top: 20px"
                   >
-                    Sort By
-                  </button>
-                  <div
-                    class="dropdown-menu"
-                    aria-labelledby="dropdownMenuButton"
-                  >
-                    <a class="dropdown-item" href="#">Category</a>
-                    <a class="dropdown-item" href="#">Expiry Date</a>
-                  </div>
+                    <option>Sort By: Expiry date</option>
+                    <option>Sort By: Category</option>
+                  </select>
                 </div>
               </div>
             </div>
