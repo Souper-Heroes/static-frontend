@@ -7,9 +7,9 @@
       sizes="76x76"
       href="../assets/img/apple-icon.png"
     />
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <link rel="icon" type="image/png" href="../assets/img/souper.jpg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>Food Waste Reduction</title>
+    <title>Souper Heroes</title>
     <meta
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
       name="viewport"
@@ -90,97 +90,102 @@
     <div
       class="page-header"
       data-parallax="true"
-      style="background-image: url('../assets/img/city-profile.jpg')"
+      style="background-image: url('../assets/img/unsplash-redfruit.jpg')"
     ></div>
     <div class="main main-raised">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-12 ml-auto mr-auto">&nbsp;</div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="card card-plain ml-auto mr-auto">
-              <div class="row">
-                <div class="col-6 mr-auto ml-auto">
-                  <img
-                    class="img-raised img-fluid mr-auto ml-auto"
-                    src="../assets/img/purple-banana.jpg"
-                    rel="nofollow"
-                    alt="Thumbnail Image"
-                  />
+      <div class="profile-content">
+        <div class="container">
+          <!-- Adding space -->
+          <div class="row">
+            <div class="col-md-6 ml-auto mr-auto">&nbsp;</div>
+          </div>
+          <!-- Main content -->
+          <div class="row ">
+            <div class="col-md-6  mr-auto border-style: 2px solid red">
+              <!-- Picture of item here-->
+              <img src="../assets/img/purple-banana.jpg" class="rounded img-fluid"/>
+            </div>
+            <div class="col-md-6  mr-auto border-style: 2px solid red">
+              <!-- Title, Desc, category here -->
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Title</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                 </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Description</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Food category</label>
+                  <select class="form-control selectpicker" data-style="btn btn-link" id="exampleFormControlSelect1">
+                    <option>Fresh fruit and veg</option>
+                    <option>Tinned</option>
+                    <option>Dry Packet</option>
+                    <option>Drinks</option>
+                    <option>Meal item</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+          </div> 
+          <div class="row">
+            <div class="col-md-6  mr-auto border-style: 2px solid black">
+              <!-- Expiry and location here -->
+              <div class="form-group">
+                <label class="label-control">Expiry date</label>
+                <input type="text" class="form-control datetimepicker" value="10/11/2020"/>
               </div>
-              <div class="row">
-                <div
-                  class="alert alert-warning ml-auto mr-auto"
-                  role="alert"
-                  style="margin-top: 10px"
-                >
-                  <h6>Expires Soon!<br /></h6>
-                </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Location</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Postcode">
               </div>
-              <div class="row">
-                <div class="col-6">
-                  <h4 class="card-title">Description</h4>
-                  5 Almost black over-riped bananas.
-                </div>
-                <div class="col-6">
-                  <h4 class="card-title">Category</h4>
-                  Fruit
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <h4 class="card-title">Expiry Date</h4>
-                  23rd September 2020
-                </div>
-                <div class="col-6">
-                  <h4 class="card-title">Location</h4>
-                  BR1 4QE
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6">
-                  <h4 class="card-title">Time Slot Start</h4>
-
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control datetimepicker"
-                      value="22/09/2020 09:00AM"
-                    />
-                  </div>
-                </div>
-                <div class="col-6">
-                  <h4 class="card-title">Time Slot End</h4>
-
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      class="form-control datetimepicker"
-                      value="22/09/2020 05:00PM"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 ml-auto mr-auto">
-                  <div class="text-center">
-                    <a href="#pablo" class="btn btn-rose"
-                      >Update Revised collection time</a
-                    >
-                  </div>
-                </div>
+              <!-- Check box -->
+              <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" value="">
+                    Use same location as profile
+                    <span class="form-check-sign">
+                        <span class="check"></span>
+                    </span>
+                </label>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 col-md-12 ml-auto mr-auto">
-            <div class="text-center">
-              <a href="#pablo" class="btn btn-rose">Reserve Item</a>
+            <div class="col-md-6  mr-auto border-style: 2px solid black">
+              <!-- Time slot, save and delete here -->
+              <div class="row">
+                <label class="col-md-12 label-control">Available collection time</label>
+                <div class="col-6 col-md-6">
+                  <div class="form-group">
+                    <label class="label-control"> from: </label>
+                    <input type="text" class="form-control datetimepicker" value="10/11/2020"/>
+                  </div>
+                </div>
+                <div class="col-6 col-md-6">
+                  <div class="form-group">
+                    <label class="label-control"> to: </label>
+                    <input type="text" class="form-control datetimepicker" value="11/11/2020"/>
+                  </div>  
+                </div> 
+              </div>
+              
+              <div class="row float-right">
+                <div class=" col-6 col-md-6 ">
+                  <button type="button" class="btn btn-danger">Cancel</button>
+                </div>  
+                <div class=" col-6 col-md-6 ">
+                  <button type="button" class="btn btn-success">Save</button>
+                </div>
+              </div>  
+  
             </div>
           </div>
+          <!-- Adding space -->
+          <div class="row">
+            <div class="col-md-6 ml-auto mr-auto">&nbsp;</div>
+          </div>
+
+          <!-- End of main add-edit-item -->
         </div>
       </div>
     </div>

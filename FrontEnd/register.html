@@ -33,16 +33,17 @@ The above copyright notice and this permission notice shall be included in all c
 <body class="login-page sidebar-collapse">
   <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
     <div class="container">
+      <!-- Why is there a container here? -->
     </div>
   </nav>
   <div class="page-header" style="background-image: url('../assets/img/board.jpg'); background-size: cover; background-position: top center;">
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-          <div class="card card-login" style="height: 30rem;"> <!-- adding some height to the card -->
+          <div class="card card-login" style="height: 30rem;">
             <form class="form" method="" action="">
               <div class="card-header card-header-rose text-center">
-                <h4 class="card-title">Reset Password</h4>
+                <h4 class="card-title">Register</h4>
                 <div class="social-line">
                   <a href="#pablo" class="btn btn-just-icon btn-link">
                     <i class="fa fa-facebook-square"></i>
@@ -57,9 +58,14 @@ The above copyright notice and this permission notice shall be included in all c
               </div>
             
               <div class="card-body">
-                <h4 class="card-title text-center">Forgotten your password?</h4>
-                <!-- Adding some padding to the left of the text -->
-                <p style="padding: 0 0 0 20px">Enter the email address that you used to register. We'll send you an email with a link to reset your password.</p>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="material-icons">face</i>
+                      </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Full Name">
+                </div>
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
@@ -68,28 +74,34 @@ The above copyright notice and this permission notice shall be included in all c
                   </div>
                   <input type="email" class="form-control" placeholder="Email...">
                 </div>
-
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text">
-                      <i class="material-icons">mail</i>
+                      <i class="material-icons">lock_outline</i>
                     </span>
                   </div>
-
-                  <input type="email" class="form-control" placeholder="Confirm Email...">
+                  <input type="password" class="form-control" placeholder="Password...">
                 </div>
                 <div class="text-center">
-                  <button class="btn btn-info btn-link " href="../index.html">Back to Log in</button>
-                </div> 
+                  <button class="btn btn-info btn-link " href="#TODO">Log in</button>
+                </div>  
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value="">
+                        <a href="https://www.creative-tim.com/" target="_blank">Terms and Conditions</a>
+                        <span class="form-check-sign">
+                            <span class="check"></span>
+                        </span>
+                    </label>
+                </div>
                 <div class="row">
                     <div class="col-md-6 ml-auto mr-auto">&nbsp;</div>
                 </div>
               </div> 
               <div class="footer text-center">
-                <a href="#pablo" class="btn btn-rose col-11">Reset password</a>
+                <a href="#pablo" class="btn btn-rose col-11">Create Account</a>
               </div>
             </form>
-
           </div>
         </div>
       </div>
