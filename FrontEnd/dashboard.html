@@ -71,11 +71,14 @@
                 <a href="./dashboard.html" class="dropdown-item">
                   <i class="material-icons">dashboard</i> Dashboard
                 </a>
-                <a href="./index.html" class="dropdown-item">
+                <a href="./my-listings.html" class="dropdown-item">
                   <i class="material-icons">list</i> My Items
                 </a>
                 <a href="./index.html" class="dropdown-item">
                   <i class="material-icons">playlist_add</i> Add Items
+                </a>
+                <a href="./my-collections.html" class="dropdown-item">
+                  <i class="material-icons">food_bank</i> Items For Collection
                 </a>
                 <a href="../index.html" class="dropdown-item">
                   <i class="material-icons">login</i> Logout
@@ -445,24 +448,24 @@
     ></script>
 
     <script>
-      $('.datetimepicker').datetimepicker({
+      $(".datetimepicker").datetimepicker({
         icons: {
-          time: 'fa fa-clock-o',
-          date: 'fa fa-calendar',
-          up: 'fa fa-chevron-up',
-          down: 'fa fa-chevron-down',
-          previous: 'fa fa-chevron-left',
-          next: 'fa fa-chevron-right',
-          today: 'fa fa-screenshot',
-          clear: 'fa fa-trash',
-          close: 'fa fa-remove',
+          time: "fa fa-clock-o",
+          date: "fa fa-calendar",
+          up: "fa fa-chevron-up",
+          down: "fa fa-chevron-down",
+          previous: "fa fa-chevron-left",
+          next: "fa fa-chevron-right",
+          today: "fa fa-screenshot",
+          clear: "fa fa-trash",
+          close: "fa fa-remove",
         },
       });
 
-      $('.bootstrap-switch').each(function () {
+      $(".bootstrap-switch").each(function () {
         $this = $(this);
-        data_on_label = $this.data('on-label') || 'aa';
-        data_off_label = $this.data('off-label') || 'bb';
+        data_on_label = $this.data("on-label") || "aa";
+        data_off_label = $this.data("off-label") || "bb";
 
         $this.bootstrapSwitch({
           onText: data_on_label,
@@ -470,7 +473,7 @@
         });
       });
 
-      var slider = document.getElementById('sliderRegular');
+      var slider = document.getElementById("sliderRegular");
 
       noUiSlider.create(slider, {
         start: 2,
@@ -484,11 +487,11 @@
         format: {
           from: Number,
           to: function (value) {
-            return value.toFixed(2) + ' Miles';
+            return value.toFixed(2) + " Miles";
           },
         },
         pips: {
-          mode: 'steps',
+          mode: "steps",
           stepped: true,
           density: 10,
         },
